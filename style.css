@@ -1,0 +1,106 @@
+/* Estilos gerais para a página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para o contêiner da calculadora */
+.calculator {
+    width: 260px; /* Ajuste a largura conforme necessário */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Aqui adicionamos o padding para criar um espaço em torno dos botões */
+    box-sizing: border-box; /* Garantir que o padding não afete o tamanho do elemento */
+}
+
+/* Estilo da tela de exibição */
+.display {
+    width: 220px;
+    height: 40px;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Estilo do painel de botões */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    background-color: #d0d0d0;
+}
+
+/* Estilo para botões de operação (+, -, *, /) */
+button.operator {
+    background-color: #f5a623;
+    color: white;
+}
+
+button.operator:hover {
+    background-color: #e59420;
+}
+
+button.operator:active {
+    background-color: #d48718;
+}
+
+/* Estilo para o botão de igual (=) */
+button.equal {
+    background-color: #4CAF50;
+    color: white;
+    grid-column: span 2;
+}
+
+button.equal:hover {
+    background-color: #45a049;
+}
+
+button.equal:active {
+    background-color: #388e3c;
+}
+
+/* Estilo para o botão de limpar (C) */
+button.clear {
+    background-color: #f44336;
+    color: white;
+    grid-column: span 2;
+}
+
+button.clear:hover {
+    background-color: #e53935;
+}
+
+button.clear:active {
+    background-color: #c62828;
+}
